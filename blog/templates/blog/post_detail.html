@@ -1,15 +1,16 @@
-{% extends 'blog/base.html' %}
-
-    {% block content %}
+ {% extends 'blog/base.html' %}
+{% block content %}
         <div class="post">
+
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <h1></h1>
+
+            <p><img class="image" src="{{ post.image.url}}" style="max-height:882px;"/></p>
+
             {% if post.published_date %}
                 <div class="date">
                     {{ post.published_date }}
                 </div>
             {% endif %}
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaks }}</p>
-            <p><img src="{{ post.image.url}}" /></p>
         </div>
     {% endblock %}

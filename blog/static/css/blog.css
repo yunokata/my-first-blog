@@ -30,8 +30,9 @@ body{
     }
 
     .date {
-        float: right;
+        float: center;
         color: #828282;
+    //  text-align:center;
     }
 
     .save {
@@ -50,7 +51,7 @@ body{
     }
 
     .post {
-        margin-bottom: 70px;
+        margin-bottom: 0px;
         text-align:center;
     }
 
