@@ -13,20 +13,20 @@ body{
 
 
     .page-header {
-        background-color: #ff9400;
+        background-color: #000;
         margin-top: 0;
-        padding: 20px 20px 20px 40px;
+        padding: 10px 10px 10px 40px;
     }
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;
-        font-size: 36pt;
+        font-size: 25pt;
         text-decoration: none;
     }
 
 
     h1, h2, h3, h4 {
-        font-family: 'Lobster', cursive;
+        font-family: 'courier', cursive;
     }
 
     .date {
@@ -51,13 +51,14 @@ body{
 
     .post {
         margin-bottom: 70px;
+        text-align:center;
     }
 
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
     footer{
-        background-color:#ff9400;
+        background-color:#000;
         padding:15px 0;
         text-align:center;
         height:50px;
@@ -66,3 +67,10 @@ body{
         margin:0;
         color:#fff;
     }
+
+    div.image-container:hover {
+    box-shadow:0 0 10px #000;
+  //  transform:scale(0.1);
+    transition:0.3s;
+
+}
