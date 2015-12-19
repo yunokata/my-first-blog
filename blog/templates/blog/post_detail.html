@@ -1,12 +1,13 @@
- {% extends 'blog/base.html' %}
-{% block content %}
+{% extends 'blog/base.html' %}
+
+    {% block content %}
         <div class="post">
 
+          {% if user.is_authenticated %}
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            {% endif %}
             <h1></h1>
-
-            <p><img class="image" src="{{ post.image.url}}" style="max-height:882px;"/></p>
-
+            <p><img class="image" src="{{ post.image.url}}" height="800" onclick="changeSizeImage(this)"/></p>
             {% if post.published_date %}
                 <div class="date">
                     {{ post.published_date }}

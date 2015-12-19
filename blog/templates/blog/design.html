@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+              {% for post in posts %}
+                  <div class="post col-md-4">
+
+                        <div class="image-container" ><a href="{% url 'post_detail' pk=post.pk %}"><img src="{{ post.image.url }}" height="500" /></a></div>
+                        <h1></h1>
+                  </div>
+              {% endfor %}
+{% endblock %}
