@@ -51,7 +51,14 @@ body{
         font-size: 26pt;
         margin-right: 20px;
     }
-
+    .menu {
+        padding:25px 0;
+        margin:0;
+        list-style:none;
+    }
+    .menu li{
+        display:inline-block;
+    }
     .post {
         margin-bottom: 0px;
         text-align:center;
@@ -80,6 +87,7 @@ body{
 
    .image{
     cursor: zoom-in;
+    box-sizing: border-box;
   }
 
     div.image-container:hover {
@@ -92,7 +100,6 @@ body{
 
 .button{
   text-decoration:none; text-align:center;
-  margin-top: 50px;
  padding:11px 32px;
  border:solid 1px #000000;
 
@@ -118,10 +125,11 @@ body{
  box-shadow:-1px 0px 2px #a1a1a1, inset 0px 0px 1px #ffffff;
 
  }.button:active{
+ text-decoration:none;
  padding:11px 32px;
  border:solid 1px #000000;
 
- font:18px "Courier New", Courier, monospace;
+ font:18px "courier", Courier, monospace;
  font-weight:bold;
  color:#000000;
  background:#ffffff;

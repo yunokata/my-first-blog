@@ -3,7 +3,7 @@
 
         <head>
             <title>588th</title>
-            <link rel="shortcut icon" href="blog\media\images\favicon.ico" type="image/x-icon">
+            <link rel="shortcut icon" href="http://588th.pythonanywhere.com/media/images/favicon.ico" type="image/x-icon">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -27,18 +27,19 @@
               {% endif %}
                 <div class="container">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="col-md-3">
                         <div class="logo1">
-                          <a href="{% url 'post_list'%}"> <img src="media/images/logo.png" width="100" /></a>
+                          <a href="{% url 'post_list'%}"> <img src="http://588th.pythonanywhere.com/media/images/logo.png" width="100" /></a>
                         </div>
                     </div>
+z
 
-
-                    <div class="menu col-sm-9 col-md-9">
-                       	<a href="{% url 'post_list'%}" class="button"  text-decoration: none/>ГЛАВНАЯ</a>
-                   	    <a href="{% url 'art'%}" class="button" />АРТ</a>
-                    	  <a href="{% url 'design'%}" class="button" />ДИЗАЙН</a>
-                    	  <a href="{% url 'backfeed'%}" class="button" />ОБРАТНАЯ СВЯЗЬ</a></div>
+                    <ul class="menu col-md-9">
+                       	<li><a href="{% url 'post_list'%}" class="button" text-decoration: none>ГЛАВНАЯ</a></li>
+                   	    <li><a href="{% url 'art'%}" class="button" text-decoration: none>АРТ</a></li>
+                    	<li><a href="{% url 'design'%}" class="button" text-decoration: none>ДИЗАЙН</a></li>
+                    	<li><a href="{% url 'backfeed'%}" class="button" text-decoration: none>ОБРАТНАЯ СВЯЗЬ</a></li>
+                    </ul>
 
                 </div>
             </div>
